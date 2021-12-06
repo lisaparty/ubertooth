@@ -7,14 +7,14 @@ Build Guide
 Release 2020-12-R1
 ~~~~~~~~~~~~~~~~~~
 
-`for Release 2018-12-R1 see here <https://ubertooth.readthedocs.io/en/latest/Release_2018-12-R1.html>`__
+`Release 2018-12-R1 <https://ubertooth.readthedocs.io/en/latest/Release_2018-12-R1.html>`__
 
 
 
 Prerequisites
 ^^^^^^^^^^^^^
 
-There are some prerequisites that need to be installed before building libbtbb and the Ubertooth tools. Many of these are available from your operating system's package repositories, for example:
+Before building libbtbb and the Ubertooth tools, some prerequisites will need to be installed. Examples that may be available from your operating system’s package repositories are:
 
 
 
@@ -62,7 +62,7 @@ CentOS 8
 
 
 
-Mac OS X users can use either MacPorts or Homebrew to install the required packages:
+Mac OS X users can use either MacPorts or Homebrew to install these required packages:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	.. code-block:: sh
@@ -85,7 +85,7 @@ FreeBSD users can install the host tools and library directly from the ports and
 libbtbb
 ^^^^^^^
 
-Next the Bluetooth baseband library (libbtbb) needs to be built for the Ubertooth tools to decode Bluetooth packets:
+Next, build the Bluetooth baseband library (libbtbb) for the Ubertooth tools to decode Bluetooth packets:
 
 	.. code-block:: sh
 
@@ -104,7 +104,7 @@ Next the Bluetooth baseband library (libbtbb) needs to be built for the Ubertoot
 Ubertooth Tools
 ^^^^^^^^^^^^^^^
 
-The Ubertooth repository contains host code for sniffing Bluetooth packets, configuring the Ubertooth and updating firmware. All three are built and installed by default using the following method:
+The Ubertooth repository contains host code for sniffing Bluetooth packets, configuring the Ubertooth, and updating firmware. Build and install using:
 
 	.. code-block:: sh
 
@@ -125,7 +125,7 @@ Wireshark plugins
 
 Users of Wireshark version 2.2+ do not need to build any plugins at all and may skip this section (see `this comment <https://github.com/greatscottgadgets/libbtbb/issues/50#issuecomment-284128258>`__). This includes users of Debian 10+, Ubuntu 20.04+, Fedora 33+, RHEL 8.3+, and most other Linux distributions. You can check your version by clicking on Help --> About Wireshark.
 
-Wireshark version 1.12 and newer includes the Ubertooth BLE plugin by default. It is also possible to `capture BLE from Ubertooth directly into Wireshark <https://ubertooth.readthedocs.io/en/latest/capturing_BLE_Wireshark.html>`__ with a little work.
+Wireshark versions 1.12 and newer include the Ubertooth BLE plugin. It is also possible to `capture BLE from Ubertooth directly into Wireshark <https://ubertooth.readthedocs.io/en/latest/capturing_BLE_Wireshark.html>`__ with a little work.
 
 The Wireshark BTBB and BR/EDR plugins allow Bluetooth baseband traffic that has been captured using Kismet to be analysed and disected within the Wireshark GUI. They are built separately from the rest of the Ubertooth and libbtbb software.
 
@@ -141,7 +141,7 @@ The directory passed to cmake as ``MAKE_INSTALL_LIBDIR`` varies from system to s
 		make
 		sudo make install	
 
-Then repeat for the BT BR/EDR plugin:
+Repeat for the BT BR/EDR plugin:
 
 	.. code-block:: sh
 
@@ -158,11 +158,11 @@ Then repeat for the BT BR/EDR plugin:
 Third Party Software
 ~~~~~~~~~~~~~~~~~~~~
 
-There are a number of pieces of `third party software <https://ubertooth.readthedocs.io/en/latest/third_party_software.html>`__ that support the Ubertooth. Some support Ubertooth out of the box, while others require plugins to be built.
+There are a number of pieces of `third party software <https://ubertooth.readthedocs.io/en/latest/third_party_software.html>`__ that support the Ubertooth. Some support Ubertooth as is, while others require plugins to be built.
 
 
 
 Firmware
 ~~~~~~~~
 
-This completes the install of the Ubertooth tools, the next step is to look at the getting started guide. You should always `update the firmware <https://ubertooth.readthedocs.io/en/latest/firmware.html>`__ on the Ubertooth device to match the software release version that you are using.
+Always `update the firmware <https://ubertooth.readthedocs.io/en/latest/firmware.html>`__ on the Ubertooth device to match the software release version being used. Next step: <https://ubertooth.readthedocs.io/en/latest/getting_started.html>``__
