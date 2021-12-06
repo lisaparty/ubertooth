@@ -14,7 +14,7 @@ Release 2020-12-R1
 Prerequisites
 ^^^^^^^^^^^^^
 
-Before building libbtbb and the Ubertooth tools, some prerequisites will need to be installed. Examples that may be available from your operating system’s package repositories are:
+Before building libbtbb and the Ubertooth tools, prerequisites will need to be installed. Examples that may be available from your operating system’s package repositories are:
 
 
 
@@ -155,14 +155,14 @@ Repeat for the BT BR/EDR plugin:
 
 
 
-Third Party Software
+Third-Party Software
 ~~~~~~~~~~~~~~~~~~~~
 
-There are a number of pieces of `third party software <https://ubertooth.readthedocs.io/en/latest/third_party_software.html>`__ that support the Ubertooth. Some support Ubertooth as is, while others require plugins to be built.
+There are a number of pieces of `third-party software <https://ubertooth.readthedocs.io/en/latest/third_party_software.html>`__ that support the Ubertooth. Some support Ubertooth as is, while others require plugins to be built.
 
 
 
 Firmware
 ~~~~~~~~
 
-Always `update the firmware <https://ubertooth.readthedocs.io/en/latest/firmware.html>`__ on the Ubertooth device to match the software release version being used. Next step: <https://ubertooth.readthedocs.io/en/latest/getting_started.html>``__
+Always `update the firmware <https://ubertooth.readthedocs.io/en/latest/firmware.html>`__ on the Ubertooth device to match the software release version being used. Next step: `Getting Started <https://ubertooth.readthedocs.io/en/latest/getting_started.html>`__.
